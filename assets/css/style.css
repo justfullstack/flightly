@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* general */
+.hidden{
+    display: none;
+}
+
+/* navbar section */
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+
+/* hero section */
+.hero__title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: rgb(255, 94, 0);
+}
+.hero{
+    background: url("../img/cover.jpg");
+    background-position: center;
+    /* background-size: fill; */
+    /* background-repeat: no-repeat; */
+    height: 50vh; 
+}
+
+/* message section */
+.message{
+    padding: 1rem auto;
+    border-radius: 5px ; 
+}
+
+.message.is-primary{
+    color: gray;
+    border: 0.1rem solid gray;
+    border-left: 0.5rem solid gray;
+    border-radius: 5px ;
+}
+
+.message.is-primary span{
+    background: rgb(69, 141, 69);
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 5px;
+    margin: auto 0.3rem;
+}
+
+.message.is-danger{
+    color: rgb(243, 91, 91);
+    border: 0.1rem solid rgb(243, 91, 91);
+    border-left: 0.5rem solid rgb(243, 91, 91);
+    border-radius: 5px ;
+}
+
+
+.message.is-success{
+    color: rgb(69, 141, 69);
+    border: 0.1rem solid rgb(69, 141, 69);
+    border-left: 0.5rem solid rgb(69, 141, 69);
+    border-radius: 5px ;
+}
+
+
+/* search */
+.search-airport{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.search-airport input{
+     height: 4rem;
+}
+
+.search-airport{
+    max-width: 500px; 
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.search-airport button{
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background: none;
+    margin-right: -8rem;
+    padding: 0 1rem;
+    position: inherit;
+    z-index: 3;
+    color: gray;
+}
+
+.search-airport>input:focus{
+    font-size: 1.3rem;
+    padding: 0 2rem;
+    color: gray;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* css loader */
+.loader {
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color:rgb(255, 94, 0) #0000 rgb(177, 177, 177) #0000;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: 1s rotate linear infinite;
+    margin-left: -7.5rem; 
+
+
+ }
+
+ .loader.hidden{
+    display: none;
+ }
+
+ .loader:before , .loader:after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    /* border: 5px solid transparent; */
+    border-bottom-color:#fff;
+    transform: translate(-10px, 19px) rotate(-35deg);
+  }
+ .loader:after {
+    border-color: #de3500 #0000 #0000 #0000 ;
+    transform: translate(32px, 3px) rotate(-35deg);
+  }
+   @keyframes rotate {
+    100%{    transform: rotate(360deg)}
+  }
+
+
+
+
+/* results table */ 
+.results table{
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    margin-top: -6rem;
+}
+
+
+
+
+
+
+
+/* responsiveness: larger screens */
+@media(min-width: 800px){
+    .results table{
+        width: 60%;
+    }
+}

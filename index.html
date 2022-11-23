@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>
+      Flightly
+    </title>
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css"> 
+  </head>
+  <body>
+    <nav class="navbar border-bottom" role="navigation" aria-label="main navigation"> 
+        <div class="container-fluid">
+          <a class="navbar-brand h1" href="https://bulma.io">
+            Flightly
+          </a>
+        </div>  
+    </nav>
+
+    <section class="hero container-fluid py-2" >
+      <div class="row mt-5">
+        <h2 class="text-center hero__title">Search Nearby<br>Airports</h2>
+      </div>
+      <div class="row">
+        <form action="#" class="form  search-airport">
+          <button type="submit"> 
+            <i class="fas fa-search"></i>
+          </button>
+          <input type="text" class="form-control" placeholder="Search airport..." id="search">
+          <span class="loader  " id="loading"></span> 
+        </form>
+      </div>
+    </section>
+
+    <div class="container mt-3">
+      <div class="row">
+        <div class="message py-3   is-primary text-center ">
+          Showing <span class="tag is-success"> 25 </span> results for <b>Japan</b>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="results container-fluid m-0 border bg-gray"  >
+      <div class="row">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>
+                Name
+              </th>
+  
+              <th>
+                Code
+              </th>
+  
+              <th>
+                Type
+              </th> 
+  
+              <th>
+                City
+              </th>
+  
+              <th>
+                State
+              </th>
+  
+              <th>
+                Country
+              </th>
+            </tr>
+          </thead> 
+          <tbody>
+            <tr>
+              <th>
+                1.
+              </th>
+              <td>
+                Kenyatta International Airport
+              </td>
+              <td>
+                JKIA
+              </td>
+              <td>
+                Nairobi
+              </td>
+              <td>
+                Nairobi
+              </td>
+              <td>
+                Kenya
+              </td> 
+            </tr>   
+            <tr>
+              <th>
+                2.
+              </th>
+              <td>
+                Moi International Airport
+              </td>
+              <td>
+                MIA
+              </td>
+              <td>
+                Kisumu
+              </td>
+              <td>
+                Kisumu
+              </td>
+              <td>
+                Kenya
+              </td> 
+            </tr> 
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    
+
+     
+    <script defer src="assets/js/bootstrap.min.js"></script>
+    <!-- <script defer src="assets/js/air-port-codes-node.js"></script>
+    <script defer src="assets/js/ui.js"></script>
+    <script src="assets/js/app.js"></script> -->
+    <script src="build/app.bundle.js"></script>
+  </body>
+</html>
+
+
+
